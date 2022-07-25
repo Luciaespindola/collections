@@ -1,6 +1,7 @@
+import Domain.Palabra;
 import Service.AppCompany;
 import Domain.Employee;
-
+import Service.Diccionario;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,7 +9,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        ArrayList <Employee> employees = new ArrayList<>();
+        /*ArrayList <Employee> employees = new ArrayList<>();
 
         employees.add(new Employee("Lucia", 40930551, 24));
         employees.add(new Employee("Maria", 25768494, 28));
@@ -21,6 +22,18 @@ public class Main {
         AppCompany.reportEmployeeData(employees);
         System.out.println("Los empleados menores de 30 años son: ");
         AppCompany.getFromEmployeesLessThanThirty(employees);
+        */
+
+        Diccionario diccionarioEspañol = new Diccionario("Español");
+        diccionarioEspañol.ingresarPalabra(new Palabra("Programación", "Acción y efecto programar", "Español"));
+        diccionarioEspañol.ingresarPalabra(new Palabra("Saludo", "Acción y efecto de saludar", "Español"));
+        diccionarioEspañol.ingresarPalabra(new Palabra("Abeja", "Insecto himenópero", "Español"));
+        diccionarioEspañol.ingresarPalabra(new Palabra("Programación", "Acción y efecto programar", "Español"));
+
+        diccionarioEspañol.buscarPalabra("Saludo");
+        diccionarioEspañol.imprimirPalabras();
+        diccionarioEspañol.removerPalabra("Abeja");
+        diccionarioEspañol.removerPalabra("Manzana");
 
     }
 }
