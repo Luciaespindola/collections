@@ -56,6 +56,12 @@ public class Diccionario {
                 palabras.remove(palabraEnDiccionario);
                 System.out.println("Se removio la palabra: " + palabraARemover);
                 break;
+            //Palabra palabraARemover = new Palabra(palabra);
+            //boolean seRemovio = palabras.remove(palabraARemover);
+            //if (seRemovio) {
+                //System.out.printl("Palabra " + palabra + " removida del diccionario");
+                // }else {
+                    //System.out.printl("La palabra " + palabra " + palabra + " no existe en el diccionario.");
             }
         }
         if (!seEncontro) {
