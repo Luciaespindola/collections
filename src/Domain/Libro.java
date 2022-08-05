@@ -50,6 +50,9 @@ public class Libro {
     @Override
     public String toString() {
         return titulo + "/" + año + "/" + getCodigo();
+    //@Override
+        //    public String toString() {
+        //        return titulo + "/" + autor + "/" + getCodigo();
     }
 
     @Override
